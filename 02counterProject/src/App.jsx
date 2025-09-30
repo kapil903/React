@@ -3,25 +3,24 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-let value = 0;
-
-const addValue = () =>{
-  console.log("Clicked", value);
-  value = value + 1
-  setCount(value)
-}
-const removeValue = () =>{
-  console.log("Clicked", value)
-  value = value - 1
-  setCount(value)
-}
-
 function App() {
-  const [count, setCount] = useState(0)
+  let [count, setCount] = useState(14)
+
+  const addValue = () => {
+    console.log("Clicked", count);
+    count = count + 1
+    setCount(count)
+  }
+
+  const removeValue = () => {
+    console.log("Clicked", count)
+    count = count - 1
+    setCount(count)
+  }
   return (
     <>
       <h1>Counter</h1>
-      <h2>count: {value}</h2>
+      <h2>count: {count}</h2>
       <button onClick={addValue}>
         Add Value
       </button>
