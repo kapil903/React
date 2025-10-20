@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react' //Importing Hooks
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let [count, setCount] = useState(14)
+  let [count, setCount] = useState(14) //Hooks
 
   const addValue = () => {
     console.log("Clicked", count);
